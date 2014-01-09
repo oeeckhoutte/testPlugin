@@ -15,6 +15,6 @@
                 </feature>
             </config-file>
             <source-file src="src/ios/TorchPlugin.m" />
-            <header-file src="src/ios/TorchPlugi.h" />
+            <header-file src="src/ios/TorchPlugin.h" />
         </platform>
     </plugin>
