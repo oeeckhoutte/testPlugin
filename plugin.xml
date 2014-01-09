@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.facility.plugins.torch" version="0.1.0">
+        <name>Torch</name>
+        <author>Olivier Eeckhoutte</author>
+        <description>Cordova Torch Plugin</description>
+        <license>MIT</license>
+        <keywords>cordova,torch</keywords>
+        <js-module src="www/torch.js" name="torch">
+            <clobbers target="torch" />
+        </js-module>
+        <platform name="ios">
+            <config-file target="config.xml" parent="/*">
+                <feature name="TorchPlugin">
+                    <param name="ios-package" value="TorchPlugin"/>
+                </feature>
+            </config-file>
+            <source-file src="src/ios/TorchPlugin.m" />
+            <header-file src="src/ios/TorchPlugi.h" />
+        </platform>
+    </plugin>
